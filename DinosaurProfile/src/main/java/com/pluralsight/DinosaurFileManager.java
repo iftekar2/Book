@@ -9,9 +9,8 @@ import java.util.ArrayList;
 public class DinosaurFileManager {
     private static String fileName = "inventory.csv";
 
-    public static Dinosaur getDinosaur(){
+    public static ArrayList<Dinosaur> getDinosaur(){
         ArrayList<Dinosaur> dinosaurs = new ArrayList<>();
-        Dinosaur dinosaur = null;
 
         try{
             BufferedReader bufferedReader = new BufferedReader(new FileReader(fileName));
@@ -41,7 +40,7 @@ public class DinosaurFileManager {
         }catch (Exception e){
             e.printStackTrace();
         }
-        return dinosaur;
+        return dinosaurs;
     }
 
     public static String saveDinosaur(Dinosaur dinosaur){
