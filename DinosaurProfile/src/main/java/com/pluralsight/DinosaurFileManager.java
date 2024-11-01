@@ -28,7 +28,7 @@ public class DinosaurFileManager {
 
                 if(newLine.length == 5){
                     String name = newLine[0];
-                    int age = Integer.parseInt(newLine[0]);
+                    int age = Integer.parseInt(newLine[1]);
                     String species = newLine[2];
                     String diet = newLine[3];
                     double weight = Double.parseDouble(newLine[4]);

@@ -80,4 +80,15 @@ public class Dinosaur {
     public void setWeight(double weight){
         this.weight = weight;
     }
+
+    @Override
+    public String toString() {
+        return "Dinosaur{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", species='" + species + '\'' +
+                ", diet='" + diet + '\'' +
+                ", weight=" + weight +
+                '}';
+    }
 }
