@@ -1,5 +1,7 @@
 package com.pluralsight;
 
+import java.util.List;
+
 public class Dinosaur {
     private String name;
     private int age;
@@ -32,14 +34,6 @@ public class Dinosaur {
     }
 
     /**
-     * setter for name
-     * @param name
-     */
-    public void setName(String name){
-        this.name = name;
-    }
-
-    /**
      * getter for age
      * @return age
      */
@@ -64,27 +58,11 @@ public class Dinosaur {
     }
 
     /**
-     * setter for species
-     * @param species
-     */
-    public void setSpecies(String species){
-        this.species = species;
-    }
-
-    /**
      * getter for diet
      * @return diet
      */
     public String getDiet(){
         return diet;
-    }
-
-    /**
-     * setter for diet
-     * @param diet
-     */
-    public void setDiet(String  diet){
-        this.diet = diet;
     }
 
     /**
