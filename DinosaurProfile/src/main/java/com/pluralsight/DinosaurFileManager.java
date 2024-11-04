@@ -129,4 +129,39 @@ public class DinosaurFileManager {
         }
         return dinosaurs;
     }
+
+    public List<Dinosaur> getDinosaurByAge(int age){
+        ArrayList<Dinosaur> dinosaurs = new ArrayList<> ();
+
+        try{
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(fileName));
+
+            String line;
+            boolean firstLine = true;
+
+            while((line = bufferedReader.readLine()) != null){
+                if(firstLine){
+                    firstLine = false;
+                    continue;
+                }
+
+                String[] newLine = line.split("\\|");
+                if(newLine.length == 5){
+                    String name = newLine[0];
+                    int currentAge = Integer.parseInt(newLine[1]);
+                    String species = newLine[2];
+                    String diet = newLine[3];
+                    double weight = Double.parseDouble(newLine[4]);
+
+                    if(currentAge == age){
+                        dinosaurs.add(new Dinosaur(name, currentAge, species, diet, weight));
+                    }
+                }
+            }
+            bufferedReader.close();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return dinosaurs;
+    }
 }

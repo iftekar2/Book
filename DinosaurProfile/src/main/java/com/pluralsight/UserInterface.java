@@ -61,8 +61,24 @@ public class UserInterface {
         System.out.println();
     }
 
+    public void processDinosaurByAge(){
+        int age = Console.PromptForInt ("Enter Dinosaur age: ");
+        DinosaurFileManager dinosaurFileManager = new DinosaurFileManager();
+        List<Dinosaur> dinosaurs = dinosaurFileManager.getDinosaurByAge(age);
+
+        if(dinosaur.isEmpty ()){
+            System.out.println("No dinosaurs found for this species: " + age);
+        }else{
+            System.out.println("Dinosaurs of age " + age + ":\n");
+            for(Dinosaur dinosaur : dinosaurs){
+                System.out.println(dinosaur);
+            }
+        }
+        System.out.println();
+    }
+
     public void displayAll(){
-        System.out.println("Please enter a choice (A to display all dinosaurs): ");
+        System.out.println("Please enter a choice: ");
         String userChoice;
 
         do{
@@ -79,6 +95,9 @@ public class UserInterface {
                     break;
                 case "D":
                     processDinosaurByDiet();
+                    break;
+                case "E":
+                    processDinosaurByAge();
                     break;
                 default:
                     System.out.println("Invalid choice. Enter 'A' to display all dinosaurs.");
