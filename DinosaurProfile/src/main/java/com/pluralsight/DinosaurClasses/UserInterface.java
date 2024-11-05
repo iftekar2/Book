@@ -1,4 +1,6 @@
-package com.pluralsight;
+package com.pluralsight.DinosaurClasses;
+
+import com.pluralsight.Console;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.pluralsight;
+package com.pluralsight.EmployeeClasses;
 
 public class Employee {
     private String name;

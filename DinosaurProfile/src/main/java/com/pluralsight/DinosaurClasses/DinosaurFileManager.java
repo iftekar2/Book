@@ -1,4 +1,4 @@
-package com.pluralsight;
+package com.pluralsight.DinosaurClasses;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

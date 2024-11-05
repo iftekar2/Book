@@ -1,6 +1,4 @@
-package com.pluralsight;
-
-import java.util.List;
+package com.pluralsight.DinosaurClasses;
 
 public class Dinosaur {
     private String name;
