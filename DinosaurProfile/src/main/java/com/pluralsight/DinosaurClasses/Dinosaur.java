@@ -7,6 +7,8 @@ public class Dinosaur {
     private String diet;
     private double weight;
 
+    public Dinosaur(){}
+
     /**
      * This is a Constructor
      * @param name
