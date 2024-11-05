@@ -18,18 +18,18 @@ public class UserInterface {
         }
     }
 
-    public void addDinosaur(){
-        String name = Console.PromptForString("Enter dinosaur name: ");
-        int age = Console.PromptForInt("Enter dinosaur age: ");
-        String species = Console.PromptForString("Enter dinosaur species: ");
-        String diet = Console.PromptForString("Enter dinosaur diet: ");
-        double weight = Console.PromptForDouble("Enter dinosaur weight: ");
-
-        Dinosaur dinosaur = new Dinosaur(name, age, species, diet, weight);
-        this.dinosaur.add(dinosaur);
-        String result = DinosaurFileManager.saveDinosaur(dinosaur);
-        System.out.println(result);
-    }
+//    public void addDinosaur(){
+//        String name = Console.PromptForString("Enter dinosaur name: ");
+//        int age = Console.PromptForInt("Enter dinosaur age: ");
+//        String species = Console.PromptForString("Enter dinosaur species: ");
+//        String diet = Console.PromptForString("Enter dinosaur diet: ");
+//        double weight = Console.PromptForDouble("Enter dinosaur weight: ");
+//
+//        Dinosaur dinosaur = new Dinosaur(name, age, species, diet, weight);
+//        this.dinosaur.add(dinosaur);
+//        String result = DinosaurFileManager.saveDinosaur(dinosaur);
+//        System.out.println(result);
+//    }
 
     public void processDinosaurBySpecies(){
         String species = Console.PromptForString("Enter species name: ");
@@ -81,6 +81,10 @@ public class UserInterface {
 
     public void displayAll(){
         System.out.println("Please enter a choice: ");
+        System.out.println("[A] to display all Dinosaur: ");
+        System.out.println("[S] to display by Species: ");
+        System.out.println("[D] to display by Diet: ");
+        System.out.println("[Y] to display by Age: ");
         String userChoice;
 
         do{
@@ -89,16 +93,16 @@ public class UserInterface {
                 case "A":
                     displayAllDinosaur();
                     break;
-                case "B":
-                    addDinosaur();
-                    break;
-                case "C":
+//                case "B":
+//                    addDinosaur();
+//                    break;
+                case "S":
                     processDinosaurBySpecies();
                     break;
                 case "D":
                     processDinosaurByDiet();
                     break;
-                case "E":
+                case "Y":
                     processDinosaurByAge();
                     break;
                 default:
