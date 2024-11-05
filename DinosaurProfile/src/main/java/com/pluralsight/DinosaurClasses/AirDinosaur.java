@@ -3,19 +3,19 @@ package com.pluralsight.DinosaurClasses;
 
 public class AirDinosaur extends Dinosaur {
     private double wingspan;
-    private double flySpeed;
+    private double flightSpeed;
 
     public AirDinosaur(){}
 
-    public AirDinosaur(double wingspan, double flySpeed) {
+    public AirDinosaur(double wingspan, double flightSpeed) {
         this.wingspan = wingspan;
-        this.flySpeed = flySpeed;
+        this.flightSpeed = flightSpeed;
     }
 
-    public AirDinosaur(String name, int age, String species, String diet, double weight, double wingspan, double flySpeed) {
+    public AirDinosaur(String name, int age, String species, String diet, double weight, double wingspan, double flightSpeed) {
         super (name, age, species, diet, weight);
         this.wingspan = wingspan;
-        this.flySpeed = flySpeed;
+        this.flightSpeed = flightSpeed;
     }
 
     public double getWingspan() {
@@ -26,11 +26,11 @@ public class AirDinosaur extends Dinosaur {
         this.wingspan = wingspan;
     }
 
-    public double getFlySpeed() {
-        return flySpeed;
+    public double getFlightSpeed() {
+        return flightSpeed;
     }
 
-    public void setFlySpeed(double flySpeed) {
-        this.flySpeed = flySpeed;
+    public void setFlightSpeed(double flightSpeed) {
+        this.flightSpeed = flightSpeed;
     }
 }
