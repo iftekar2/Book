@@ -1,6 +1,5 @@
 package com.pluralsight.DinosaurClasses;
 
-import java.util.concurrent.atomic.AtomicBoolean;
 
 public class AirDinosaur extends Dinosaur {
     private double wingspan;
