@@ -81,12 +81,12 @@ public class Dinosaur {
 
     @Override
     public String toString() {
-        return "Dinosaur{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", species='" + species + '\'' +
-                ", diet='" + diet + '\'' +
-                ", weight=" + weight +
-                '}';
+        return
+                "\tname: '" + name + '\'' +
+                ",\n\tage: " + age +
+                ",\n\tspecies: '" + species + '\'' +
+                ",\n\tdiet: '" + diet + '\'' +
+                ",\n\tweight: " + weight +
+                "\n";
     }
 }

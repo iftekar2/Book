@@ -13,8 +13,9 @@ public class UserInterface {
     }
 
     public void displayAllDinosaur(){
+        System.out.println ("\nAll Dinosaurs: ");
         for(Dinosaur dinosaur1 : dinosaur){
-            System.out.println("dinosaur1 = " + dinosaur1.toString());
+            System.out.println(dinosaur1.toString());
         }
     }
 
@@ -39,7 +40,7 @@ public class UserInterface {
         if(dinosaur.isEmpty()){
             System.out.println("No dinosaurs found for the species: " + species);
         }else{
-            System.out.println("Dinosaurs of species " + species + " :\n");
+            System.out.println("\nDinosaurs of species " + species + ":");
             for(Dinosaur dinosaur : dinosaurs){
                 System.out.println(dinosaur);
             }
@@ -55,7 +56,7 @@ public class UserInterface {
         if(dinosaur.isEmpty()){
             System.out.println("No dinosaurs found for this species: " + diet);
         }else{
-            System.out.println("Dinosaurs of diet " + diet + ":\n");
+            System.out.println("\nDinosaurs of diet " + diet + ":");
             for(Dinosaur dinosaur : dinosaurs){
                 System.out.println(dinosaur);
             }
@@ -71,7 +72,7 @@ public class UserInterface {
         if(dinosaur.isEmpty ()){
             System.out.println("No dinosaurs found for this species: " + age);
         }else{
-            System.out.println("Dinosaurs of age " + age + ":\n");
+            System.out.println("\nDinosaurs of age " + age + ":");
             for(Dinosaur dinosaur : dinosaurs){
                 System.out.println(dinosaur);
             }
@@ -85,6 +86,7 @@ public class UserInterface {
         System.out.println("[S] to display by Species: ");
         System.out.println("[D] to display by Diet: ");
         System.out.println("[Y] to display by Age: ");
+        System.out.println("[E] to Exit: ");
         String userChoice;
 
         do{
