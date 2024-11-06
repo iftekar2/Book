@@ -44,21 +44,21 @@ public class DinosaurFileManager {
         return dinosaurs;
     }
 
-    public static String saveDinosaur(Dinosaur dinosaur) {
-        if (dinosaur == null) {
-            return "Dinosaur is null";
-        }
-        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(fileName, true))) {
-            String dinosaurData = String.format("%s|%d|%s|%s|%.2f%n",
-                    dinosaur.getName(), dinosaur.getAge(), dinosaur.getSpecies(),
-                    dinosaur.getDiet(), dinosaur.getWeight());
-            bufferedWriter.write(dinosaurData);
-            return "Dinosaur saved successfully.";
-        } catch (Exception e) {
-            e.printStackTrace();
-            return "Error saving dinosaur.";
-        }
-    }
+//    public static String saveDinosaur(Dinosaur dinosaur) {
+//        if (dinosaur == null) {
+//            return "Dinosaur is null";
+//        }
+//        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(fileName, true))) {
+//            String dinosaurData = String.format("%s|%d|%s|%s|%.2f%n",
+//                    dinosaur.getName(), dinosaur.getAge(), dinosaur.getSpecies(),
+//                    dinosaur.getDiet(), dinosaur.getWeight());
+//            bufferedWriter.write(dinosaurData);
+//            return "Dinosaur saved successfully.";
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//            return "Error saving dinosaur.";
+//        }
+//    }
 
     public List<Dinosaur> getDinosaursBySpecies(String species){
         ArrayList<Dinosaur> dinosaurs = new ArrayList<>();
