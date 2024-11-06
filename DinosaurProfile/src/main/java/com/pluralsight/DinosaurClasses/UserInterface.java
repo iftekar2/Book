@@ -82,7 +82,6 @@ public class UserInterface {
 
     public void displayAll(){
         System.out.println("Please enter a choice: ");
-        System.out.println("[A] to display all Dinosaur: ");
         System.out.println("[S] to display by Species: ");
         System.out.println("[D] to display by Diet: ");
         System.out.println("[Y] to display by Age: ");
@@ -95,9 +94,6 @@ public class UserInterface {
                 case "A":
                     displayAllDinosaur();
                     break;
-//                case "B":
-//                    addDinosaur();
-//                    break;
                 case "S":
                     processDinosaurBySpecies();
                     break;
